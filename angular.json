@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "repro-app": {
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "it": "src/i18n/messages.it.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -37,6 +43,7 @@
           },
           "configurations": {
             "production": {
+              "localize": true,
               "budgets": [
                 {
                   "type": "initial",
